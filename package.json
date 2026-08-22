@@ -1,0 +1,19 @@
+{
+  "name": "tiktok-metadata-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Telegram bot that returns full TikTok video metadata (creator, stats, music, technical video details) using TikWM, deployed on Vercel serverless functions.",
+  "main": "bot.js",
+  "engines": {
+    "node": ">=18.x"
+  },
+  "scripts": {
+    "dev": "vercel dev",
+    "bot:local": "node bot.js",
+    "set-webhook": "node scripts/set-webhook.js",
+    "delete-webhook": "node scripts/delete-webhook.js"
+  },
+  "dependencies": {
+    "ffprobe-static": "^3.1.0"
+  }
+}
